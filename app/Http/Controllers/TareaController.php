@@ -14,7 +14,8 @@ class TareaController extends Controller
      */
     public function index()
     {
-        $tareas = Tarea::orderByDesc('id');
+        //se le puede pasar consulta sql
+        $tareas = Tarea::orderByDesc('id')->get();
         return view('tarea.index', compact('tareas'));
     }
 

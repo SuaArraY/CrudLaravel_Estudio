@@ -5,7 +5,7 @@
 @section('contenido')
     <h3>Listado de Tareas</h3>
     
-    <table>
+    <table class="table table-stripped table-hover">
         <thead>
             <tr>
                 <th>Nombre</th>
