@@ -6,7 +6,7 @@
     <h3> 
         Registrar tarea
     </h3>
-    <form action="{{ route('') }}" method="POST">
+    <form action="{{ route('tarea.store') }}" method="POST">
         @csrf
         <div class="row">
             <div class="col-sm-12">
