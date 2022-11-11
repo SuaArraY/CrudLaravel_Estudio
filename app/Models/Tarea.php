@@ -19,6 +19,16 @@ class Tarea extends Model
         'fecha_limite',
         'urgencia',
     ];
-
+    // Esto ya ayuda a cambiar el formato en el index
     protected $dates = ['fecha_limite'];
+    public const URGENCIAS = ['Baja','Normal','Alta'];
+
+    public function urgencia()
+    {
+        return self::URGENCIAS[$this->urgencia];
+    }
+
+    public function estaFinalizada(){
+        return $this->finalizada ==1 ? 'SI' : 'NO';
+    }
 }

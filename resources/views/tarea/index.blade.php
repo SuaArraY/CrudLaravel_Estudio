@@ -24,19 +24,19 @@
                         {{ $tarea->nombre }}
                     </td>
                     <td>
-                        {{ $tarea->finalizada }}
+                        {{ $tarea->estaFinalizada() }}
                     </td>
                     <td>
-                        {{ $tarea->fecha_limite }}
+                        {{ $tarea->fecha_limite->format('H:i d / m / y') }}
                     </td>
                     <td>
-                        {{ $tarea->urgencia }}
+                        {{ $tarea->urgencia() }}
                     </td>
                     <td>
                         {{ $tarea->descripcion }}
                     </td>
                     <td>
-                        
+                        <a href="{{ route('tarea.edit',$tarea) }}">Editar</a>
                     </td>
                 </tr>
                 

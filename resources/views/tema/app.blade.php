@@ -17,7 +17,7 @@
             </div>
             <div class="col-sm-12">
                 <a href="{{ route('tarea.create') }}" class="btn btn-link">Crear Nueva Tarea</a>
-                <a href="" class="btn btn-link">Listar Tareas</a>
+                <a href="{{ route('tarea.index') }}" class="btn btn-link">Listar Tareas</a>
             </div>
             <div class="col-sm-12">
                 <!--Esta variable llama a la vista hija-->
