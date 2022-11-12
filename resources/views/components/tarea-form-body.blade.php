@@ -2,7 +2,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <label for="InputNombre" class="form-label">* Nombre de la tarea</label>
-                <input type="text" name="nombre" id="InputNombre" class="form-control" placeholder="..." value="{{ old('nombre', $tarea->nombre) }}">
+                <input type="text" name="nombre" id="InputNombre" class="form-control" placeholder="..." value="{{ old('nombre') }}">
             </div>
             <div class="col-sm-4">
                 <div class="form-ckeck">
