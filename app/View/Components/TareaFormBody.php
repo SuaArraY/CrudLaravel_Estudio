@@ -15,6 +15,13 @@ class TareaFormBody extends Component
      */
     public function __construct( $tarea=null)
     {
+        if(is_null( $tarea ))
+        {
+            $tarea = Tarea::make([
+                'urgencia' => 0,
+                'fecha_limite' => carbon::now(),
+            ]);
+        }
         $this->tarea= $tarea;
     }
 
