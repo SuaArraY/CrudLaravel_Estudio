@@ -7,7 +7,7 @@
         Editar tarea <i>{{ $tarea->nombre }}</i>
     </h3>
     <form action="{{ route('tarea.store') }}" method="POST">
-        <x-tarea-form-body :tarea="$tarea"/>
+        <x-tarea-form-body :tarea="$tarea" />
     </form>
     @if ($errors->any())
     <div class="alert alert-danger">
